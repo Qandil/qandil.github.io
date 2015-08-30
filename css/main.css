@@ -122,6 +122,10 @@ body {
     width: 200px;
 }
 
+.cover .fa {
+    margin-right: 6px;
+}
+
 /*
  * Footer
  */
