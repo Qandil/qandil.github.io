@@ -118,7 +118,9 @@ body {
   padding: 10px 20px;
   font-weight: bold;
 }
-
+.cover img {
+    width: 160px;
+}
 
 /*
  * Footer
@@ -127,8 +129,6 @@ body {
 .mastfoot {
     color: #999; /* IE8 proofing */
     color: rgba(255,255,255,.5);
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
@@ -136,6 +136,12 @@ body {
 /*
  * Affix and center
  */
+@media (min-width: 360px) {
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+}
 
 @media (min-width: 768px) {
   /* Pull out the header and footer */
