@@ -118,7 +118,7 @@ body {
   padding: 10px 20px;
   font-weight: bold;
 }
-.cover img {
+.cover .img-circle {
     width: 160px;
 }
 
