@@ -180,7 +180,7 @@
 
     <footer>
         <p id="principle" style="cursor: pointer; transition: opacity 0.3s;">
-            💡 "Transform with purpose, lead with clarity"
+            <!-- Will be populated by JavaScript -->
         </p>
     </footer>
 
@@ -234,12 +234,27 @@
             "⚡ \"Empowering teams to exceed possibilities\"",
             "🔮 \"Future-proofing enterprises, one project at a time\""
         ];
-        let current = 0;
-        document.getElementById('principle').addEventListener('click', function() {
+        
+        let currentIndex = -1;
+        
+        function getRandomPrinciple() {
+            let newIndex;
+            do {
+                newIndex = Math.floor(Math.random() * principles.length);
+            } while (newIndex === currentIndex && principles.length > 1);
+            currentIndex = newIndex;
+            return principles[newIndex];
+        }
+        
+        // Set initial random principle on load
+        const principleElement = document.getElementById('principle');
+        principleElement.innerHTML = getRandomPrinciple();
+        
+        // Change to new random principle on click
+        principleElement.addEventListener('click', function() {
             this.style.opacity = '0';
             setTimeout(() => {
-                current = (current + 1) % principles.length;
-                this.innerHTML = principles[current];
+                this.innerHTML = getRandomPrinciple();
                 this.style.opacity = '1';
             }, 300);
         });
