@@ -179,7 +179,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Issa Qandil. All rights reserved.</p>
+        <p id="principle" style="cursor: pointer; transition: opacity 0.3s;">
+            💡 "Transform with purpose, lead with clarity"
+        </p>
     </footer>
 
     <script>
@@ -222,6 +224,25 @@
 
         // Track page visibility
         track('page_view', 'hero');
+
+
+        // Rotating principles
+        const principles = [
+            "💡 \"Transform with purpose, lead with clarity\"",
+            "🚀 \"Where technology meets strategic vision\"",
+            "🎯 \"Turning complex challenges into elegant solutions\"",
+            "⚡ \"Empowering teams to exceed possibilities\"",
+            "🔮 \"Future-proofing enterprises, one project at a time\""
+        ];
+        let current = 0;
+        document.getElementById('principle').addEventListener('click', function() {
+            this.style.opacity = '0';
+            setTimeout(() => {
+                current = (current + 1) % principles.length;
+                this.innerHTML = principles[current];
+                this.style.opacity = '1';
+            }, 300);
+        });
     </script>
 
     <!-- Structured Data -->
