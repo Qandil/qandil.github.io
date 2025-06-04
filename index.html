@@ -1,106 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="robots" content="index, follow">
-	<link rel="canonical" href="https://issaqandil.com">
-	<title>Issa Qandil - Senior Program Manager | Digital Transformation Expert</title>
-	<meta name="description" content="Issa Qandil, Senior Program Manager with 18+ years driving digital transformation in enterprise automation, system integration, and team leadership.">
-	<meta name="author" content="Issa Qandil">
-	
-	<!-- Open Graph data -->
-	<meta property="og:title" content="Issa Qandil - Senior Program Manager | Digital Transformation Expert">
-	<meta property="og:description" content="Issa Qandil, Senior Program Manager with 18+ years driving digital transformation in enterprise automation, system integration, and team leadership.">
-	<meta property="og:image" content="images/Qandil-IssaQandil_400x400.jpg">
-	<meta property="og:url" content="https://issaqandil.com">
-	<meta property="og:type" content="website">
-	
-	<!-- Twitter Card data -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Issa Qandil - Senior Program Manager | Digital Transformation Expert">
-	<meta name="twitter:description" content="Issa Qandil, Senior Program Manager with 18+ years driving digital transformation in enterprise automation, system integration, and team leadership.">
-	<meta name="twitter:image" content="images/Qandil-IssaQandil_400x400.jpg">
-	
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Issa Qandil" />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
-	
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<!-- Font Awesome CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link href="css/main.css" rel="stylesheet">
-	
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://issaqandil.com">
+    <title>Issa Qandil - Senior Program Manager | Digital Transformation Expert</title>
+    <meta name="description" content="Issa Qandil, Senior Program Manager with 18+ years driving digital transformation in enterprise automation, system integration, and team leadership.">
+    <meta name="author" content="Issa Qandil">
+    
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Issa Qandil - Senior Program Manager | Digital Transformation Expert">
+    <meta property="og:description" content="Issa Qandil, Senior Program Manager with 18+ years driving digital transformation in enterprise automation, system integration, and team leadership.">
+    <meta property="og:image" content="https://issaqandil.com/images/Qandil-IssaQandil_400x400.jpg">
+    <meta property="og:url" content="https://issaqandil.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #111827;
+            background: linear-gradient(135deg, #374151 0%, #111827 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-font-smoothing: antialiased;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            to { transform: translate(60px, 60px); }
+        }
+
+        .hero {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1s ease-out;
+            padding: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border: 5px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #e5e7eb;
+            margin-bottom: 20px;
+        }
+
+        .lead {
+            font-size: 1.125rem;
+            color: #d1d5db;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: #fff;
+            color: #374151;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #f3f4f6;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(17, 24, 39, 0.9);
+            text-align: center;
+            color: #9ca3af;
+            backdrop-filter: blur(10px);
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .profile-image { width: 150px; height: 150px; }
+            h2 { font-size: 1.25rem; }
+            .btn { padding: 12px 24px; font-size: 0.9rem; }
+        }
+    </style>
 </head>
 <body>
-	<div class="site-wrapper">
-		<div class="site-wrapper-inner">
-			<div class="cover-container">
-				<div class="inner cover">
-					<p>
-						<img class="img-circle img-thumbnail" data-toggle="tooltip" data-placement="top" title="Issa Qandil" src="images/Qandil-IssaQandil_400x400.jpg" alt="Issa Qandil">
-					</p>
-					<h1 class="cover-heading">Hi, I'm Issa</h1>
-					<h2>Senior Program Manager</h2>
-					<p class="lead">
-						Senior technology leader with 18+ years driving digital transformation in enterprise solutions, system integration, and high-impact team building.
-					</p>
-					<p class="lead">
-						<a href="https://ae.linkedin.com/in/issaqandil" target="_blank" class="btn btn-lg btn-default">
-							<i class="fa fa-linkedin-square"></i> Let's connect!
-						</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <main class="hero">
+        <img class="profile-image" 
+             src="images/Qandil-IssaQandil_400x400.jpg" 
+             alt="Issa Qandil" 
+             width="180" 
+             height="180"
+             data-track="profile-image">
+        <h1>Hi, I'm Issa Qandil</h1>
+        <h2>Senior Program Manager</h2>
+        <p class="lead">
+            Senior technology leader with 18+ years driving digital transformation in enterprise solutions, system integration, and high-impact team building.
+        </p>
+        <a href="https://ae.linkedin.com/in/issaqandil" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn" 
+           aria-label="Connect on LinkedIn"
+           data-track="linkedin">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            Let's Connect
+        </a>
+    </main>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- Bootstrap JS -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<!-- Initialize tooltips -->
-	<script>
-		$(function () {
-			$('[data-toggle="tooltip"]').tooltip()
-		})
-	</script>
+    <footer>
+        <p>&copy; 2024 Issa Qandil. All rights reserved.</p>
+    </footer>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-17167181-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date())
-		gtag('config', 'UA-17167181-1', {
-			'page_path': location.pathname + location.search
-		})
-	</script>
+    <script>
+        // GA4 Setup
+        const GA_ID = 'UA-17167181-1';
+        const s = document.createElement('script');
+        s.async = 1;
+        s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+        document.head.appendChild(s);
+        
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        
+        s.onload = () => {
+            gtag('js', new Date());
+            gtag('config', GA_ID);
+        };
 
-	<!-- Structured Data -->
-	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "Person",
-		"name": "Issa Qandil",
-		"jobTitle": "Senior Program Manager",
-		"url": "https://issaqandil.com",
-		"sameAs": [
-			"https://ae.linkedin.com/in/issaqandil"
-		],
-		"description": "Senior technology leader with 18+ years driving digital transformation in enterprise solutions, system integration, and high-impact team building."
-	}
-	</script>
+        // Simple event tracking
+        const track = (action, label) => {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', action, {
+                    event_category: 'engagement',
+                    event_label: label
+                });
+            }
+        };
+
+        // Track clicks
+        document.addEventListener('click', e => {
+            const el = e.target.closest('[data-track]');
+            if (el) track('click', el.dataset.track);
+        });
+
+        // Track time on page
+        const startTime = Date.now();
+        window.addEventListener('beforeunload', () => {
+            track('time_on_page', Math.round((Date.now() - startTime) / 1000));
+        });
+
+        // Track page visibility
+        track('page_view', 'hero');
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Issa Qandil",
+        "jobTitle": "Senior Program Manager",
+        "url": "https://issaqandil.com",
+        "image": "https://issaqandil.com/images/Qandil-IssaQandil_400x400.jpg",
+        "sameAs": ["https://ae.linkedin.com/in/issaqandil"],
+        "description": "Senior technology leader with 18+ years driving digital transformation in enterprise solutions, system integration, and high-impact team building."
+    }
+    </script>
 </body>
 </html>
